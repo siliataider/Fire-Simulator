@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="/css/style.css">
+    </head>   
+
+    <body>
+    
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <div class="topnav">
+        <a class="active" href="index.html" target = _blank>Home</a>
+        <a href="filter_fire.html" target = _blank>Filter Fires</a>
+        <a href="add.html" target = _blank>Add vehicles</a>
+        <a href="about.html" target = _blank>About & Contact</a>
+        </div> 
+
+    <h1>You can add a vehicle to our facility by filling the following form: </h1>
+
+    <br>
+
+    <div id="add_vehicle_form">
+    <form id="formVehicle">
+        <h2 class="header">Please fill in the required fields</h2>
+
+        <input type="text" name="crewMember" placeholder="crewMember"><br>
+
+        <input type="text"name="facilityRefID" placeholder="facilityRefID" ><br>
+        
+        <input type="text" name="fuel" placeholder="fuel"><br>
+
+        <input type="text" name="lat" placeholder="lat"><br>
+
+        <input type="text" name="liquidQuantity" placeholder="liquidQuantity"><br>
+
+        <input type="text" name="liquidType" placeholder="liquidType"><br>
+
+        <input type="text" name="lon" placeholder="lon"><br>
+
+        <label class="type">type:</label><br>
+
+        <div class = "radio">
+            <input type="radio" name="type" value="CAR">CAR<br>
+            <input type="radio" name="type" value="FIRE_ENGINE">FIRE_ENGINE<br>
+            <input type="radio" name="type" value="PUMPER_TRUCK">PUMPER_TRUCK<br>
+            <input type="radio" name="type" value="WATER_TENDERS">WATER_TENDERS<br>
+            <input type="radio" name="type" value="TURNTABLE_LADDER_TRUCK">TURNTABLE_LADDER_TRUCK<br>
+            <input type="radio" name="type" value="TRUCK">TRUCK<br>
+        </div>
+
+        <button class = "submit" type="button"  value="Create" onclick="handleSubmit()" >Create vehicle</button>
+        <button class = "submit" type="reset" value="Reset">Reset</button>
+
+    </form>
+    </div> 
+
+      
+
+
+    <script type="text/javascript" src="/js/script.js"></script>
+
+    </body>
+
+</html> 
